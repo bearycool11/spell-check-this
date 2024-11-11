@@ -256,6 +256,14 @@
 # Should be `(coarse|fine)-grained`
 \b(?:coarse|fine) grained\b
 
+# Homoglyph (Cyrillic) should be `A`/`B`/`C`/`E`/`H`/`I`/`I`/`J`/`K`/`M`/`O`/`P`/`S`/`T`/`Y`
+# It's possible that your content is intentionally mixing Cyrllic and Latin scripts, but if it isn't, you definitely want to correct this.
+(?<=[A-Z]{2})[АВСЕНІӀЈКМОРЅТУ]|[АВСЕНІӀЈКМОРЅТУ](?=[A-Z]+(?:\b|[a-z]+)|[a-z]+(?:[^a-z]|$))
+
+# Homoglyph (Cyrillic) should be `a`/`b`/`e`
+# It's possible that your content is intentionally mixing Cyrllic and Latin scripts, but if it isn't, you definitely want to correct this.
+[аве](?=[A-Za-z]{2,})|(?<=[A-Za-z]{2})[аве]|(?<=[A-Za-z])[аве](?=[A-Za-z])
+
 # Should be `neither/nor` -- or reword
 (?!<do )\bnot\b([^.?!"/(](?!neither|,.*?,))+\bnor\b
 
