@@ -677,6 +677,9 @@ nolint:\w+
 # Windows short paths
 [/\\][^/\\]{5,6}~\d{1,2}(?=[/\\])
 
+# Windows Resources with accelerators
+\b[A-Z]&[a-z]+\b(?!;)
+
 # cygwin paths
 /cygdrive/[a-zA-Z]/(?:Program Files(?: \(.*?\)| ?)(?:/[-+.~\\/()\w ]+)*|[-+.~\\/()\w])+
 
