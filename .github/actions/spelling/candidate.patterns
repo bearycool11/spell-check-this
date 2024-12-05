@@ -219,7 +219,7 @@ accounts\.binance\.com/[a-z/]*oauth/authorize\?[-0-9a-zA-Z&%]*
 \bmedium\.com/@?[^/\s"]+/[-\w]+
 
 # microsoft
-\b(?:https?://|)(?:(?:download\.visualstudio|docs|msdn2?|research)\.microsoft|blogs\.msdn)\.com/[-_a-zA-Z0-9()=./%]*
+\b(?:https?://|)(?:(?:(?:blogs|download\.visualstudio|docs|msdn2?|research)\.|)microsoft|blogs\.msdn)\.co(?:m|\.\w\w)/[-_a-zA-Z0-9()=./%]*
 # powerbi
 \bapp\.powerbi\.com/reportEmbed/[^"' ]*
 # vs devops
