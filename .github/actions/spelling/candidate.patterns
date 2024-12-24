@@ -689,6 +689,9 @@ nolint:\w+
 # Windows Resources with accelerators
 \b[A-Z]&[a-z]+\b(?!;)
 
+# signed off by
+(?i)Signed-off-by: .*
+
 # cygwin paths
 /cygdrive/[a-zA-Z]/(?:Program Files(?: \(.*?\)| ?)(?:/[-+.~\\/()\w ]+)*|[-+.~\\/()\w])+
 
