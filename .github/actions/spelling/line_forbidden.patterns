@@ -140,6 +140,9 @@
 # Should be `its`
 \bit's(?= own\b)
 
+# Should be `its`
+\bit's(?= only purpose\b)
+
 # Should be `log in`
 \blogin to the
 
